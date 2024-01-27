@@ -191,6 +191,15 @@ async def template(update: Update, context: CallbackContext):
     await pause(update, context)
     await update.message.reply_text(f"🍑 To learn the command try the following:")
     await update.message.reply_text(f"/add\n{params_to_template(DEFAULT_CALL_PARAMS2)}")
+    TEXT = dedent(
+        f"""
+        Users are welcome to utilize [eBay's detailed URI parameters](https://developer.ebay.com/api-docs/buy/browse/resources/item_summary/methods/search) for precise search customization\.
+        🥭 It is possible to set\-up price\_low\, price\_up\, conditions\, and buying\_options directly\, without filter\.
+        Note\: if you use your custom filter\, it will override your price\_low\, price\_up\, conditions\, and buying\_options search settings\.
+        For these 4 parameters\, default settings from /template apply if not specified\.
+        """
+    )
+    await update.message.reply_text(TEXT, parse_mode='MarkDownV2')
 
 
 @check_role_decorator(allowed_role_checker_list=[is_allowed_user, is_registered_user])
