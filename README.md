@@ -7,7 +7,6 @@ A go-to Telegram bot for eBay enthusiasts, [*beta-version*](https://t.me/FinderE
 The bot hourly checks eBay for items matching your specified searches and delivers them to your Telegram making an updating feed.
 
 🥭 Limited Availability: Due to eBay API constraints, the service is exclusive to a limited number of users.
-
 Currently supporting up to 26 users, each with the ability to create up to 8 personalized searches.
 
 ## Project Features
