@@ -7,6 +7,15 @@ readme = "README.md"
 
 [tool.poetry.dependencies]
 python = "^3.11"
+python-dotenv = "^1.0.0"
+requests = "^2.31.0"
+pandas = "^2.1.4"
+lxml = "^5.1.0"
+openpyxl = "^3.1.2"
+python-telegram-bot = "^20.7"
+aiohttp = "^3.9.1"
+mongopersistence = "^0.3.0"
+easy-open-ai = "^0.2.0"
 
 
 [build-system]
